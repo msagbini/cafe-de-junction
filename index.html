@@ -1077,7 +1077,7 @@
                 <p>Book a table, order takeaway or send us a message</p>
             </div>
             <div class="contact-grid">
-                <form class="contact-form animate" id="contact-form">
+               <form class="contact-form animate" id="contact-form" onsubmit="event.preventDefault(); alert('Thank you for your message! We will contact you soon.'); this.reset(); return false;">
                     <input type="text" placeholder="Full name" required>
                     <input type="email" placeholder="Email address" required>
                     <input type="tel" placeholder="Phone (optional)">
